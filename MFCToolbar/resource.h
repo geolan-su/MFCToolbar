@@ -2,6 +2,7 @@
 // Microsoft Visual C++ generated include file.
 // Used by MFCToolbar.rc
 //
+#define IDR_NEW_BAR                     4
 #define IDD_Pressure_Box                9
 #define IDD_ABOUTBOX                    100
 #define IDP_OLE_INIT_FAILED             100
@@ -31,6 +32,7 @@
 #define ID_VIEW_APPLOOK_WINDOWS_7       219
 #define IDS_EDIT_MENU                   306
 #define IDD_SHAPE_PROPERTIES            314
+#define IDR_TOOLBAR1                    316
 #define IDC_PRESSSURE_INDICATOR_LABEL   1001
 #define IDC_EDIT1                       1002
 #define IDC_EDIT_POINT_ONE              1003
@@ -50,13 +52,17 @@
 #define ID_LAYERS_ADDLAYER              32780
 #define ID_LAYERS_REMOVELAYER           32781
 #define ID_LAYERS_EDITLAYERORDER        32782
+#define ID_BUTTON32787                  32787
+#define ID_BUTTON32788                  32788
+#define ID_BUTTON32789                  32789
+#define ID_BUTTON32790                  32790
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        316
-#define _APS_NEXT_COMMAND_VALUE         32783
+#define _APS_NEXT_RESOURCE_VALUE        318
+#define _APS_NEXT_COMMAND_VALUE         32791
 #define _APS_NEXT_CONTROL_VALUE         1011
 #define _APS_NEXT_SYMED_VALUE           310
 #endif
