@@ -32,7 +32,6 @@
 #define ID_VIEW_APPLOOK_WINDOWS_7       219
 #define IDS_EDIT_MENU                   306
 #define IDD_SHAPE_PROPERTIES            314
-#define IDR_TOOLBAR1                    316
 #define IDC_PRESSSURE_INDICATOR_LABEL   1001
 #define IDC_EDIT1                       1002
 #define IDC_EDIT_POINT_ONE              1003
@@ -52,17 +51,18 @@
 #define ID_LAYERS_ADDLAYER              32780
 #define ID_LAYERS_REMOVELAYER           32781
 #define ID_LAYERS_EDITLAYERORDER        32782
-#define ID_BUTTON32787                  32787
-#define ID_BUTTON32788                  32788
-#define ID_BUTTON32789                  32789
+#define ID_BUTTON_DRAW_LINE             32787
+#define ID_BUTTON_DRAW_CIRCLE           32788
 #define ID_BUTTON32790                  32790
+#define ID_BUTTON_EMPTY_CANVAS          32790
+#define ID_BUTTON_DRAW_RECT             32791
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        318
-#define _APS_NEXT_COMMAND_VALUE         32791
+#define _APS_NEXT_COMMAND_VALUE         32792
 #define _APS_NEXT_CONTROL_VALUE         1011
 #define _APS_NEXT_SYMED_VALUE           310
 #endif

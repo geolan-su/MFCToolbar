@@ -36,6 +36,14 @@ BEGIN_MESSAGE_MAP(CMFCToolbarView, CView)
 	ON_UPDATE_COMMAND_UI(ID_BUTTON_RECTANGLE, &CMFCToolbarView::OnUpdateButtonRectangle)
 	ON_UPDATE_COMMAND_UI(ID_BUTTON_ZOOM, &CMFCToolbarView::OnUpdateButtonZoom)
 	ON_COMMAND(ID_TOOLS_PRESSUREVALUES, &CMFCToolbarView::OnToolsPressurevalues)
+	ON_COMMAND(ID_BUTTON_DRAW_CIRCLE, &CMFCToolbarView::OnButtonDrawCircle)
+	ON_COMMAND(ID_BUTTON_DRAW_LINE, &CMFCToolbarView::OnButtonDrawLine)
+	ON_COMMAND(ID_BUTTON_DRAW_RECT, &CMFCToolbarView::OnButtonDrawRect)
+	ON_COMMAND(ID_BUTTON_EMPTY_CANVAS, &CMFCToolbarView::OnButtonEmptyCanvas)
+	ON_UPDATE_COMMAND_UI(ID_BUTTON_DRAW_CIRCLE, &CMFCToolbarView::OnUpdateButtonDrawCircle)
+	ON_UPDATE_COMMAND_UI(ID_BUTTON_DRAW_LINE, &CMFCToolbarView::OnUpdateButtonDrawLine)
+	ON_UPDATE_COMMAND_UI(ID_BUTTON_DRAW_RECT, &CMFCToolbarView::OnUpdateButtonDrawRect)
+	ON_UPDATE_COMMAND_UI(ID_BUTTON_EMPTY_CANVAS, &CMFCToolbarView::OnUpdateButtonEmptyCanvas)
 END_MESSAGE_MAP()
 
 // CMFCToolbarView construction/destruction
@@ -230,4 +238,52 @@ void CMFCToolbarView::OnToolsPressurevalues()
 	// TODO: Add your command handler code here
 	pressureDlg pDlg;
 	pDlg.DoModal();
+}
+
+
+void CMFCToolbarView::OnButtonDrawCircle()
+{
+	// TODO: Add your command handler code here
+}
+
+
+void CMFCToolbarView::OnButtonDrawLine()
+{
+	// TODO: Add your command handler code here
+}
+
+
+void CMFCToolbarView::OnButtonDrawRect()
+{
+	// TODO: Add your command handler code here
+}
+
+
+void CMFCToolbarView::OnButtonEmptyCanvas()
+{
+	// TODO: Add your command handler code here
+}
+
+
+void CMFCToolbarView::OnUpdateButtonDrawCircle(CCmdUI* pCmdUI)
+{
+	// TODO: Add your command update UI handler code here
+}
+
+
+void CMFCToolbarView::OnUpdateButtonDrawLine(CCmdUI* pCmdUI)
+{
+	// TODO: Add your command update UI handler code here
+}
+
+
+void CMFCToolbarView::OnUpdateButtonDrawRect(CCmdUI* pCmdUI)
+{
+	// TODO: Add your command update UI handler code here
+}
+
+
+void CMFCToolbarView::OnUpdateButtonEmptyCanvas(CCmdUI* pCmdUI)
+{
+	// TODO: Add your command update UI handler code here
 }

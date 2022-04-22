@@ -58,6 +58,14 @@ public:
 	afx_msg void OnUpdateButtonRectangle(CCmdUI* pCmdUI);
 	afx_msg void OnUpdateButtonZoom(CCmdUI* pCmdUI);
 	afx_msg void OnToolsPressurevalues();
+	afx_msg void OnButtonDrawCircle();
+	afx_msg void OnButtonDrawLine();
+	afx_msg void OnButtonDrawRect();
+	afx_msg void OnButtonEmptyCanvas();
+	afx_msg void OnUpdateButtonDrawCircle(CCmdUI* pCmdUI);
+	afx_msg void OnUpdateButtonDrawLine(CCmdUI* pCmdUI);
+	afx_msg void OnUpdateButtonDrawRect(CCmdUI* pCmdUI);
+	afx_msg void OnUpdateButtonEmptyCanvas(CCmdUI* pCmdUI);
 };
 
 #ifndef _DEBUG  // debug version in MFCToolbarView.cpp
