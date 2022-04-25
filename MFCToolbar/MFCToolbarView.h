@@ -66,6 +66,7 @@ public:
 	afx_msg void OnUpdateButtonDrawLine(CCmdUI* pCmdUI);
 	afx_msg void OnUpdateButtonDrawRect(CCmdUI* pCmdUI);
 	afx_msg void OnUpdateButtonEmptyCanvas(CCmdUI* pCmdUI);
+	//afx_msg void OnLButtonDown(UINT nFlags, CPoint point);
 };
 
 #ifndef _DEBUG  // debug version in MFCToolbarView.cpp

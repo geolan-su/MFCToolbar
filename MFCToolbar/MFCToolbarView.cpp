@@ -67,7 +67,8 @@ BOOL CMFCToolbarView::PreCreateWindow(CREATESTRUCT& cs)
 }
 
 // CMFCToolbarView drawing
-
+int topLeftXY;
+int bottomRightXY;
 //draw selected shape
 void CMFCToolbarView::OnDraw(CDC* pDC)
 {
@@ -87,8 +88,21 @@ void CMFCToolbarView::OnDraw(CDC* pDC)
 	auto oldPen = pDC->SelectObject(pen);
 
 	//draw bigger if magnify
-	const int topLeftXY = m_zoomIn ? 50 : 100;
-	const int bottomRightXY = m_zoomIn ? 600 : 200;
+	//replace with mouse take code
+	bool posOneFilled = FALSE;
+	POINT posOne;
+	POINT posTwo;
+	if (GetAsyncKeyState(VK_HOME) && !posOneFilled) {
+		GetCursorPos(&posOne);
+		posOneFilled = TRUE;
+	}
+	else if (GetAsyncKeyState(VK_HOME)) {
+		GetCursorPos(&posTwo);
+		posOneFilled = TRUE;
+	}
+
+	topLeftXY = m_zoomIn ? 50 : 100;
+	bottomRightXY = m_zoomIn ? 600 : 200;
 
 	//draw selected shape
 	switch (m_shapeToDraw) {
@@ -250,6 +264,12 @@ void CMFCToolbarView::OnButtonDrawCircle()
 void CMFCToolbarView::OnButtonDrawLine()
 {
 	// TODO: Add your command handler code here
+	// TODO: Add your command handler code here
+	//change selected shape
+	m_shapeToDraw = DrawShape::Line;
+	//redraw window
+	Invalidate();
+	UpdateWindow();
 }
 
 
@@ -287,3 +307,4 @@ void CMFCToolbarView::OnUpdateButtonEmptyCanvas(CCmdUI* pCmdUI)
 {
 	// TODO: Add your command update UI handler code here
 }
+
